@@ -47,12 +47,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-property-validator.git"
+    "url": "git+https://github.com/runfan/egg-property-validator.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/runfan/egg-property-validator/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-property-validator#readme",
+  "homepage": "https://github.com/runfan/egg-property-validator#readme",
   "author": "cw.fan@qq.com",
   "license": "MIT"
 }
