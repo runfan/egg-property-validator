@@ -24,6 +24,7 @@
 Description here.
 -->
 
+see [property-validator](https://github.com/nettofarah/property-validator#).
 ## Install
 
 ```bash
@@ -45,6 +46,21 @@ exports.propertyValidator = {
 ```js
 // {app_root}/config/config.default.js
 exports.propertyValidator = {
+  isTheUltimateAnswer(propertyName) {
+  // and then return a function that takes the
+  // actual object you want to validate
+    return function(subject) {
+      const value = subject[propertyName];
+      const isAnswer = value === 42;
+      // Make sure your function returns `result`, `message`
+      // and `field`
+      return {
+        result: isAnswer,
+        message: value + ' is not the Answer to the Ultimate Question of Life, The Universe, and Everything',
+        field: propertyName,
+      };
+    };
+  },
 };
 ```
 
@@ -53,10 +69,10 @@ see [config/config.default.js](config/config.default.js) for more detail.
 ## Example
 
 <!-- example here -->
-
+see [app/extend/validation.js](app/extend/validation.js)
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+Please open an issue [here](https://github.com/runfan/egg/issues).
 
 ## License
 
