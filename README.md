@@ -1,5 +1,7 @@
 # egg-property-validator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/runfan/egg-property-validator.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
